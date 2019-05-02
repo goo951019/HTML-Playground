@@ -1,0 +1,77 @@
+
+.main-title{
+    /* background: skyblue; */
+    background: rgba(46, 255, 158, 0.445);
+    margin:0;
+    position: center;
+}
+
+.font{
+    font-family: 'Gugi', cursive;
+    color: rgb(109, 109, 190);
+}
+
+.list ul{
+    padding:0;
+}
+
+.list li{
+    list-style: none;
+}
+
+.imagejerry{
+    width:200px;
+    margin: 0 auto;
+}
+
+.jerry img{
+    width:100%;
+    
+    /* adds transition for image*/
+    transition: all .3s linear 0.1s;
+
+    /* adds animation - see below */
+    animation: disappear 5s infinite;
+}
+
+.jerry img.big{
+    transform: scale(2.0);
+}
+
+.setbg{
+    background-image: url(../images/nice.jpg);
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@keyframes disappear {
+    0%{
+        opacity:0;
+        /* transform: rotate(0); */
+    }
+    50%{
+        opacity:1.0;
+    }
+    100%{
+        opacity:0;
+    }
+}
+
+/* background behind the background when it's above 500px 
+   it's like if statement */
+@media screen and (min-width: 300px){
+    body{
+        background:black;
+    }
+    .imagejerry{
+        display:flex;
+    }
+}
+
+@media screen and (min-width:800px){
+    body{
+        background:purple;
+    }
+}
