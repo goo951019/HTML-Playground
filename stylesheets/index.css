@@ -40,10 +40,15 @@
 
 .setbg{
     background-image: url(../images/nice.jpg);
-    height: 500px;
+    height: 700px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.weather{
+    text-align: right;
+    margin-right: 30px;
 }
 
 @keyframes disappear {
@@ -72,6 +77,6 @@
 
 @media screen and (min-width:800px){
     body{
-        background:purple;
+        background:black;
     }
 }
